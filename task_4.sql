@@ -8,5 +8,5 @@ SELECT
     COLUMN_DEFAULT AS `Default`,
     EXTRA AS `Extra`
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = DATABASE()  -- Uses the database passed in the MySQL command
-  AND TABLE_NAME = 'books';
+WHERE TABLE_SCHEMA = 'alx_book_store'
+  AND TABLE_NAME = 'Books';
